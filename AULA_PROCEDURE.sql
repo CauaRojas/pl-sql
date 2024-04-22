@@ -8,9 +8,9 @@ CREATE TABLE produtos_aula (
 );
 
 DECLARE
-    v_nome   produtos_aula.nome%TYPE;
-    v_tipo   produtos_aula.tipo%TYPE;
-    v_marcar produtos_aula.tipo%TYPE;
+    v_nome   produtos_aula.nome%TYPE := 'Nomeeee';
+    v_tipo   produtos_aula.tipo%TYPE := 'TIpooooo';
+    v_marcar produtos_aula.marcar%TYPE := 'Marccaaaaar';
 BEGIN
     INSERT INTO produtos_aula (
         nome,
@@ -23,3 +23,4 @@ BEGIN
     );
 
 END;
+SELECT * FROM PRODUTOS_AULA;
